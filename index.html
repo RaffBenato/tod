@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>TOD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="controls" class="controls">
+        <h1 class="controls-text">Speed Reduction Scenario</h1>
+        <form class="speed-form" action="">
+          
+          <div class="form-item">
+            <label for="limit-start">Initial Limit</label>
+            <input id="limit-start" class="controls-input" type="text" placeholder="40 to 95">
+          </div>
+        
+          <div class="form-item">
+            <label for="limit-end">Target Limit</label>
+             <input id="limit-end" class="controls-input" type="text" placeholder="0 to 30">
+          </div>
+              
+          <div class="form-item">
+            <label for="limit-time">Time</label>
+            <input id="limit-time" class="controls-input" type="text" placeholder="3 to 10">
+          </div>
+
+          <button id="btn-start" type="submit" class="controls-btn">Start</button>
+          </form>
+      </div>
+
+      <div id="console" class="console hidden">
+      <div class="tod">
+        <div class="panel1">
+          <div class="panel1-1">
+            <div id="destination" class="white-text">SMD</div>
+            <div id="train-number" class="white-text">321</div>
+          </div>
+          <div class="panel1-2">
+            <div class="white-text">VOBC</div>
+            <div id="vobc1" class="selected">1</div>
+            <div id="vobc2" class="selected">2</div>
+          </div>
+          <div class="panel1-3">
+            <div id="ato" class="white-text">ATO</div>
+            <div id="pm" class="selected">PM</div>
+            <div id="rm" class="white-text">RM</div>
+          </div>
+          <div class="panel1-4">
+            <div id="time" class="white-text"></div>
+          </div>
+        </div>
+        <div class="panel2">
+          <div class="location">
+            <div id="departing" class="white-text">STR</div>
+            <div  class="white-text">&#8594</div>
+            <div id="arriving" class="white-text">ARR</div>
+          </div>
+          <div class="distance">350m</div>
+
+        </div>
+        <div class="panel3">
+          <div class="kph">kph</div>
+
+          <div class="speedo">
+            <div id="limiter"class="limiter">
+              <div class="hand"></div>
+            </div>
+
+            <div id="speedo-square1" class="speedo-square hidden"></div>
+            <div id="speedo-square2" class="speedo-square hidden"></div>
+            <div id="speedo-square3" class="speedo-square hidden"></div>
+            <div id="speedo-square4" class="speedo-square hidden"></div>
+            <div id="speedo-square5" class="speedo-square hidden"></div>
+            <div id="speedo-square6" class="speedo-square hidden"></div>
+            <div id="speedo-square7" class="speedo-square hidden"></div>
+            <div id="speedo-square8" class="speedo-square hidden"></div>
+            <div id="speedo-square9" class="speedo-square hidden"></div>
+            <div id="speedo-square10" class="speedo-square hidden"></div>
+            <div id="speedo-square11" class="speedo-square hidden"></div>
+            <div id="speedo-square12" class="speedo-square hidden"></div>
+            <div id="speedo-square13" class="speedo-square hidden"></div>
+            <div id="speedo-square14" class="speedo-square hidden"></div>
+            <div id="speedo-square15" class="speedo-square hidden"></div>
+            <div id="speedo-square16" class="speedo-square hidden"></div>
+            <div id="speedo-square17" class="speedo-square hidden"></div>
+            <div id="speedo-square18" class="speedo-square hidden"></div>
+            <div id="speedo-square19" class="speedo-square hidden"></div>
+            <div id="speedo-square20" class="speedo-square hidden"></div>
+          </div>
+          
+          <div class="numbers-panel">
+            <div class="numbers-panel-lines">
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line"></div>
+              <div class="numbers-panel-line-last"></div>
+
+            </div>
+            <div class="numbers-panel-numbers">
+              <div class="numbers-panel-number-first">0</div>
+              <div class="numbers-panel-number">10</div>
+              <div class="numbers-panel-number">20</div>
+              <div class="numbers-panel-number">30</div>
+              <div class="numbers-panel-number">40</div>
+              <div class="numbers-panel-number">50</div>
+              <div class="numbers-panel-number">60</div>
+              <div class="numbers-panel-number">70</div>
+              <div class="numbers-panel-number">80</div>
+              <div class="numbers-panel-number">90 <span class="numbers-panel-number-100">100</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel4"></div>
+      </div>
+
+      <div class="buttons">
+        <div id="speed-up" class="btn">&#8593;</div>
+        <div id="speed-down" class="btn">&#8595;</div>
+      </div>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
